@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.cos.dao.RurchaseRequestMapper">
+
+    <!-- 分页获取采购申请 -->
+    <select id="rurchaseRequestByPage" resultType="java.util.LinkedHashMap">
+        SELECT
+        rr.id,
+        rr.num,
+        rr.content,
+        rr.price,
+        rr.process,
+        rr.step,
+        rr.applicant,
+        rr.create_date AS createDate
+        FROM
+        rurchase_request rr
+        WHERE
+        1 = 1
+        <if test="rurchaseRequest.num != null and rurchaseRequest.num != ''">
+            AND rr.num LIKE CONCAT('%',#{rurchaseRequest.num},'%')
+        </if>
+        <if test="rurchaseRequest.step != null">
+            AND rr.step = #{rurchaseRequest.step}
+        </if>
+        <if test="rurchaseRequest.applicant != null and rurchaseRequest.applicant != ''">
+            AND rr.applicant LIKE CONCAT('%',#{rurchaseRequest.applicant},'%')
+        </if>
+    </select>
+</mapper>

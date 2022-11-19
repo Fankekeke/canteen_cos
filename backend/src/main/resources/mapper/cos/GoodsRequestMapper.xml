@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.cos.dao.GoodsRequestMapper">
+
+    <!-- 分页获取耗材申请 -->
+    <select id="goodsRequestByPage" resultType="java.util.LinkedHashMap">
+        SELECT
+        gr.id,
+        gr.num,
+        gr.user_id AS userId,
+        gr.content,
+        gr.process,
+        gr.step,
+        gr.create_date AS createDate,
+        si.`name`,
+        si.team
+        FROM
+        goods_request gr
+        LEFT JOIN student_info si ON ( si.id = gr.user_id )
+        WHERE
+        1 = 1
+        <if test="goodsRequest.num != null and goodsRequest.num != ''">
+            AND gr.num LIKE CONCAT('%',#{goodsRequest.num},'%')
+        </if>
+        <if test="goodsRequest.name != null and goodsRequest.name != ''">
+            AND si.`name` LIKE CONCAT('%',#{goodsRequest.name},'%')
+        </if>
+        <if test="goodsRequest.team != null and goodsRequest.team != ''">
+            AND si.`team` LIKE CONCAT('%',#{goodsRequest.team},'%')
+        </if>
+        <if test="goodsRequest.step != null">
+            AND gr.step = #{goodsRequest.step}
+        </if>
+        <if test="goodsRequest.userId != null">
+            AND si.user_id = #{goodsRequest.userId}
+        </if>
+    </select>
+</mapper>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.cos.dao.StockOutMapper">
+
+    <!-- 分页获取出库管理 -->
+    <select id="stockOutByPage" resultType="java.util.LinkedHashMap">
+        SELECT
+        so.id,
+        so.num,
+        so.user_id AS userId,
+        so.price,
+        so.custodian,
+        so.handler,
+        so.create_date AS createDate,
+        so.apply_id AS applyId,
+        si.`name` AS userName,
+        si.team
+        FROM
+        stock_out so
+        LEFT JOIN student_info si ON ( si.id = so.user_id )
+        WHERE
+        1 = 1
+        <if test="stockOut.num != null and stockOut.num != ''">
+            AND so.num LIKE CONCAT('%',#{stockOut.num},'%')
+        </if>
+        <if test="stockOut.custodian != null and stockOut.custodian != ''">
+            AND so.custodian LIKE CONCAT('%',#{stockOut.custodian},'%')
+        </if>
+        <if test="stockOut.handler != null and stockOut.handler != ''">
+            AND so.handler LIKE CONCAT('%',#{stockOut.handler},'%')
+        </if>
+        <if test="stockOut.userName != null and stockOut.userName != ''">
+            AND si.name LIKE CONCAT('%',#{stockOut.userName},'%')
+        </if>
+    </select>
+
+    <!-- 获取九天前采购统计 -->
+    <select id="selectStockOutByLast" resultType="java.util.LinkedHashMap">
+        SELECT
+        DATE_FORMAT( spo.days, '%m-%d' ) AS days,
+        IFNULL( SUM( oi.price ), 0 ) AS orderPrice
+        FROM
+        (
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 0 DAY ) days UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 1 DAY ) UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 2 DAY ) UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 3 DAY ) UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 4 DAY ) UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 5 DAY ) UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 6 DAY ) UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 7 DAY ) UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 8 DAY ) UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 9 DAY )) spo
+        LEFT JOIN stock_out oi ON (
+        DATE_FORMAT( oi.create_date, '%Y-%m-%d' ) = DATE_FORMAT( spo.days, '%Y-%m-%d' ))
+        AND oi.user_id = #{userId}
+        GROUP BY
+        days
+        ORDER BY days ASC
+    </select>
+</mapper>

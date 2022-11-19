@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.cos.dao.StockInfoMapper">
+
+    <!-- 分页获取库房信息 -->
+    <select id="stockInfoByPage" resultType="java.util.LinkedHashMap">
+        SELECT
+        si.id,
+        si.name,
+        si.type,
+        si.type_id AS typeId,
+        si.amount,
+        si.unit,
+        si.content,
+        si.price,
+        si.create_date AS createDate,
+        ct.`name` AS consumableType
+        FROM
+        stock_info si
+        LEFT JOIN consumable_type ct ON ( ct.id = si.type_id )
+        WHERE
+        1 = 1
+        <if test="stockInfo.name != null and stockInfo.name != ''">
+            AND si.name LIKE CONCAT('%',#{stockInfo.name},'%')
+        </if>
+        <if test="stockInfo.type != null and stockInfo.type != ''">
+            AND si.type LIKE CONCAT('%',#{stockInfo.type},'%')
+        </if>
+        <if test="stockInfo.typeId != null">
+            AND si.type_id = #{stockInfo.typeId}
+        </if>
+        AND si.is_in = 0
+    </select>
+
+    <!-- 分页获取物品出入库详情 -->
+    <select id="stockInfoDetailPage" resultType="java.util.LinkedHashMap">
+        SELECT
+        si.id,
+        si.name,
+        si.type_id AS typeId,
+        si.type,
+        si.amount,
+        si.unit,
+        si.content,
+        si.price,
+        si.create_date AS createDate,
+        si.is_in,
+        si.to_user_id,
+        cy.`name` AS consumableName
+        FROM
+        stock_info si
+        LEFT JOIN consumable_type cy ON (cy.id = si.type_id)
+        WHERE si.is_in != 0
+        <if test="stockInfo.name != null and stockInfo.name != ''">
+            AND si.name LIKE CONCAT('%',#{stockInfo.name},'%')
+        </if>
+        <if test="stockInfo.type != null and stockInfo.type != ''">
+            AND si.type LIKE CONCAT('%',#{stockInfo.type},'%')
+        </if>
+        <if test="stockInfo.typeId != null">
+            AND si.type_id = #{stockInfo.typeId}
+        </if>
+        <if test="stockInfo.isIn != null">
+            AND si.is_in = #{stockInfo.isIn}
+        </if>
+    </select>
+
+    <!-- 根号用户ID获取领取耗材 -->
+    <select id="getGoodsPutByUserId" resultType="java.util.LinkedHashMap">
+        SELECT
+        si.id,
+        si.name,
+        si.type_id AS typeId,
+        si.type,
+        si.amount,
+        si.unit,
+        si.content,
+        si.price,
+        si.create_date AS createDate,
+        ct.`name` AS consumableName
+        FROM
+        stock_info si
+        LEFT JOIN student_info stu ON ( stu.id = si.to_user_id )
+        LEFT JOIN consumable_type ct ON ( ct.id = si.type_id )
+        WHERE
+        1 = 1
+        AND si.is_in = 2
+        AND stu.user_id = #{ stockInfo.userId }
+        <if test="stockInfo.name != null and stockInfo.name != ''">
+            AND si.name LIKE CONCAT('%',#{stockInfo.name},'%')
+        </if>
+        <if test="stockInfo.type != null and stockInfo.type != ''">
+            AND si.type LIKE CONCAT('%',#{stockInfo.type},'%')
+        </if>
+        <if test="stockInfo.typeId != null">
+            AND si.type_id = #{stockInfo.typeId}
+        </if>
+    </select>
+
+    <!-- 入库统计 -->
+    <select id="stockPutRate" resultType="java.util.LinkedHashMap">
+        SELECT
+        DATE_FORMAT( spo.days, '%m-%d' ) AS days,
+        IFNULL( SUM(er.amount), 0 ) AS amount
+        FROM
+        (
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 0 DAY ) days UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 1 DAY ) UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 2 DAY ) UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 3 DAY ) UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 4 DAY ) UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 5 DAY ) UNION
+        SELECT
+        DATE_SUB( curdate(), INTERVAL + 6 DAY )) spo
+        LEFT JOIN stock_info er ON (
+        DATE_FORMAT( er.create_date, '%Y-%m-%d' ) = DATE_FORMAT( spo.days, '%Y-%m-%d' )) AND er.is_in = 1
+        GROUP BY
+        days
+        ORDER BY
+        days ASC
+    </select>
+
+    <!-- 入库类型统计 -->
+    <select id="stockPutTypeRate" resultType="java.util.LinkedHashMap">
+        SELECT
+        IFNULL(sum( si.amount * si.price ),0) AS price,
+        ct.`name`
+        FROM
+        stock_info si
+        LEFT JOIN consumable_type ct ON ( ct.id = si.type_id )
+        WHERE
+        si.is_in = 1
+        GROUP BY
+        ct.id
+    </select>
+
+    <!-- 出库统计 -->
+    <select id="stockOutRate" resultType="java.util.LinkedHashMap">
+        SELECT
+        DATE_FORMAT( spo.days, '%m-%d' ) AS days,
+        IFNULL( SUM(er.amount), 0 ) AS amount
+        FROM
+        (
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 0 DAY ) days UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 1 DAY ) UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 2 DAY ) UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 3 DAY ) UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 4 DAY ) UNION
+        SELECT
+            DATE_SUB( curdate(), INTERVAL + 5 DAY ) UNION
+        SELECT
+        DATE_SUB( curdate(), INTERVAL + 6 DAY )) spo
+        LEFT JOIN stock_info er ON (
+        DATE_FORMAT( er.create_date, '%Y-%m-%d' ) = DATE_FORMAT( spo.days, '%Y-%m-%d' )) AND er.is_in = 2
+        GROUP BY
+        days
+        ORDER BY
+        days ASC
+    </select>
+
+    <!-- 出库类型统计 -->
+    <select id="stockOutTypeRate" resultType="java.util.LinkedHashMap">
+        SELECT
+        IFNULL(sum( si.amount * si.price ),0) AS price,
+        ct.`name`
+        FROM
+        stock_info si
+        LEFT JOIN consumable_type ct ON ( ct.id = si.type_id )
+        WHERE
+        si.is_in = 2
+        GROUP BY
+        ct.id
+    </select>
+
+    <!-- 本月数据统计 -->
+    <select id="stockInfoByMonth" resultType="java.util.LinkedHashMap">
+        SELECT
+        *
+        FROM
+        ( SELECT count( 1 ) AS putCount FROM stock_info si WHERE si.is_in = 1 ) AS on1,
+        ( SELECT count( 1 ) AS outCount FROM stock_info si WHERE si.is_in = 2 ) AS on2,
+        ( SELECT IFNULL( SUM( si.amount * si.price ),0) AS price FROM stock_info si WHERE si.is_in = 1 ) AS on3
+    </select>
+</mapper>

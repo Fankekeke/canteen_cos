@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.cos.dao.StockPutMapper">
+
+    <!-- 分页获取入库记录 -->
+    <select id="stockPutByPage" resultType="java.util.LinkedHashMap">
+        SELECT
+        sp.id,
+        sp.num,
+        sp.price,
+        sp.custodian,
+        sp.put_user AS putUser,
+        sp.content,
+        sp.create_date AS createDate
+        FROM
+        stock_put sp
+        WHERE 1 = 1
+        <if test="stockPut.num != null and stockPut.num != ''">
+            AND sp.num LIKE CONCAT('%',#{stockPut.num},'%')
+        </if>
+        <if test="stockPut.putUser != null and stockPut.putUser != ''">
+            AND sp.put_user LIKE CONCAT('%',#{stockPut.putUser},'%')
+        </if>
+        <if test="stockPut.custodian != null and stockPut.custodian != ''">
+            AND sp.custodian LIKE CONCAT('%',#{stockPut.custodian},'%')
+        </if>
+    </select>
+</mapper>

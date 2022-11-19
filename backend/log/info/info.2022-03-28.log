@@ -1,0 +1,270 @@
+2022-03-28 21:30:50.801 febs [main] INFO  cc.mrbird.febs.FebsApplication - Starting FebsApplication on WIN-ETS2DEK9JHC with PID 12140 (started by Administrator in E:\Project\实验室耗材管理系统\backend)
+2022-03-28 21:30:50.805 febs [main] INFO  cc.mrbird.febs.FebsApplication - No active profile set, falling back to default profiles: default
+2022-03-28 21:30:51.604 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-28 21:30:51.606 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-03-28 21:30:51.657 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37ms. Found 0 repository interfaces.
+2022-03-28 21:30:51.992 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncExecutorPoolConfig' of type [cc.mrbird.febs.common.config.AsyncExecutorPoolConfig$$EnhancerBySpringCGLIB$$106412e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.103 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.201 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$eab35e86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.212 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.215 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.228 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8124edb5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.243 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$eca4ef5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.612 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [cc.mrbird.febs.common.config.RedisConfig$$EnhancerBySpringCGLIB$$e569a6b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.630 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisPoolFactory' of type [redis.clients.jedis.JedisPool] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.634 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisService' of type [cc.mrbird.febs.common.service.impl.RedisServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.712 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.719 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatisPlusConfig' of type [cc.mrbird.febs.common.config.MybatisPlusConfig$$EnhancerBySpringCGLIB$$d2ac49c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.722 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.728 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$beed5a4f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.740 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceCreator' of type [com.baomidou.dynamic.datasource.DynamicDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.741 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceProvider' of type [com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.743 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-检测到并开启了p6spy
+2022-03-28 21:30:52.751 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Starting...
+2022-03-28 21:30:52.929 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Start completed.
+2022-03-28 21:30:52.929 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - 初始共加载 1 个数据源
+2022-03-28 21:30:52.929 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - 动态数据源-加载 primary 成功
+2022-03-28 21:30:52.929 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - 当前的默认数据源是单数据源，数据源名为 primary
+2022-03-28 21:30:52.929 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.baomidou.dynamic.datasource.DynamicRoutingDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.939 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:52.946 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.539 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.545 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.548 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.550 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [com.sun.proxy.$Proxy108] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.568 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.569 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [com.sun.proxy.$Proxy110] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.575 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.576 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [com.sun.proxy.$Proxy111] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.577 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleService' of type [cc.mrbird.febs.system.service.impl.UserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.612 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuService' of type [cc.mrbird.febs.system.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.630 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleService' of type [cc.mrbird.febs.system.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.651 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.654 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [com.sun.proxy.$Proxy115] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.657 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuService' of type [cc.mrbird.febs.system.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.677 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.679 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy117] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.707 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.708 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigMapper' of type [com.sun.proxy.$Proxy118] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.712 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigService' of type [cc.mrbird.febs.system.service.impl.UserConfigServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.743 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'studentInfoMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.744 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'studentInfoMapper' of type [com.sun.proxy.$Proxy120] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.745 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'studentInfoServiceImpl' of type [cc.mrbird.febs.cos.service.impl.StudentInfoServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.767 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [cc.mrbird.febs.system.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.787 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$dcb86d46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.792 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$8f052f5f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.795 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$4a1c154e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.802 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.805 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.811 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$70e78c7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.816 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.819 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$bec40ad5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.832 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.833 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.838 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.840 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.858 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.875 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheService' of type [cc.mrbird.febs.common.service.impl.CacheServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.882 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userManager' of type [cc.mrbird.febs.system.manager.UserManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.883 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.890 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:53.910 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-28 21:30:54.272 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9527 (http)
+2022-03-28 21:30:54.283 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9527"]
+2022-03-28 21:30:54.287 febs [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-03-28 21:30:54.287 febs [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+2022-03-28 21:30:54.292 febs [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\dotnet\;D:\办公软件\Git\cmd;D:\办公软件\Yarn\bin\;D:\办公软件\Xshell\;D:\办公软件\Xftp\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Local\Yarn\bin;D:\办公软件\Bandzip\;C:\Program Files\Azure Data Studio\bin;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;.]
+2022-03-28 21:30:54.411 febs [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-03-28 21:30:54.411 febs [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3569 ms
+2022-03-28 21:30:55.021 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-03-28 21:30:55.022 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2022-03-28 21:30:55.022 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-03-28 21:30:55.022 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+2022-03-28 21:30:55.022 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2022-03-28 21:30:55.023 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+2022-03-28 21:30:55.023 febs [main] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2022-03-28 21:30:55.023 febs [main] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2022-03-28 21:30:55.533 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2022-03-28 21:30:55.544 febs [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-03-28 21:30:55.544 febs [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2022-03-28 21:30:55.548 febs [main] INFO  o.s.s.quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2022-03-28 21:30:55.550 febs [main] INFO  o.s.s.quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2022-03-28 21:30:55.551 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'MyScheduler' with instanceId 'WIN-ETS2DEK9JHC1648474255534'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2022-03-28 21:30:55.551 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'MyScheduler' initialized from an externally provided properties instance.
+2022-03-28 21:30:55.551 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2022-03-28 21:30:55.552 febs [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@5bdb6ea8
+2022-03-28 21:30:55.604 febs [main] INFO  p6spy - 2022-03-28 21:30:55 | 耗时 1 ms | SQL 语句：
+select job_id jobId, bean_name beanName, method_name methodName, params, cron_expression cronExpression, status, remark, create_time createTime from t_job order by job_id;
+2022-03-28 21:30:56.297 febs [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'taskExecutor'
+2022-03-28 21:30:58.008 febs [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2022-03-28 21:30:58.077 febs [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-03-28 21:30:58.170 febs [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Will start Quartz Scheduler [MyScheduler] in 1 seconds
+2022-03-28 21:30:58.187 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9527"]
+2022-03-28 21:30:58.199 febs [scheduling-1] INFO  cc.mrbird.febs.common.task.CacheTask - delete expired user
+2022-03-28 21:30:58.200 febs [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2022-03-28 21:30:58.222 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9527 (http) with context path ''
+2022-03-28 21:30:58.229 febs [main] INFO  cc.mrbird.febs.FebsApplication - Started FebsApplication in 7.891 seconds (JVM running for 13.121)
+2022-03-28 21:30:58.250 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - Redis连接中 ······
+2022-03-28 21:30:58.251 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - 缓存初始化 ······
+2022-03-28 21:30:58.251 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - 缓存用户数据 ······
+2022-03-28 21:30:58.300 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 5 ms | SQL 语句：
+SELECT USER_ID,username,password,dept_id,email,mobile,status,create_time,modify_time,last_login_time,ssex,description,avatar FROM t_user;
+2022-03-28 21:30:58.308 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 4 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'mrbird' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2022-03-28 21:30:58.386 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 2 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'mrbird';
+2022-03-28 21:30:58.401 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 4 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'mrbird' and m.perms is not null and m.perms <> '';
+2022-03-28 21:30:58.413 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 1 ms | SQL 语句：
+SELECT USER_ID,theme,layout,multi_page,fix_siderbar,fix_header,color FROM t_user_config WHERE USER_ID='1' ;
+2022-03-28 21:30:58.418 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'scott' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2022-03-28 21:30:58.420 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'scott';
+2022-03-28 21:30:58.423 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'scott' and m.perms is not null and m.perms <> '';
+2022-03-28 21:30:58.426 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,theme,layout,multi_page,fix_siderbar,fix_header,color FROM t_user_config WHERE USER_ID='2' ;
+2022-03-28 21:30:58.428 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'jack' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2022-03-28 21:30:58.431 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'jack';
+2022-03-28 21:30:58.443 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 1 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'jack' and m.perms is not null and m.perms <> '';
+2022-03-28 21:30:58.446 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,theme,layout,multi_page,fix_siderbar,fix_header,color FROM t_user_config WHERE USER_ID='12' ;
+2022-03-28 21:30:58.448 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'caigou' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2022-03-28 21:30:58.452 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'caigou';
+2022-03-28 21:30:58.455 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'caigou' and m.perms is not null and m.perms <> '';
+2022-03-28 21:30:58.456 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,theme,layout,multi_page,fix_siderbar,fix_header,color FROM t_user_config WHERE USER_ID='13' ;
+2022-03-28 21:30:58.459 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2022-03-28 21:30:58.461 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'admin';
+2022-03-28 21:30:58.463 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'admin' and m.perms is not null and m.perms <> '';
+2022-03-28 21:30:58.466 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,theme,layout,multi_page,fix_siderbar,fix_header,color FROM t_user_config WHERE USER_ID='14' ;
+2022-03-28 21:30:58.469 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'lisi' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2022-03-28 21:30:58.471 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'lisi';
+2022-03-28 21:30:58.474 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'lisi' and m.perms is not null and m.perms <> '';
+2022-03-28 21:30:58.475 febs [main] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,theme,layout,multi_page,fix_siderbar,fix_header,color FROM t_user_config WHERE USER_ID='15' ;
+2022-03-28 21:30:58.476 febs [main] INFO  c.m.f.common.runner.StartedUpRunner -  __    ___   _      ___   _     ____ _____  ____ 
+2022-03-28 21:30:58.476 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2022-03-28 21:30:58.476 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2022-03-28 21:30:58.476 febs [main] INFO  c.m.f.common.runner.StartedUpRunner -                                                       
+2022-03-28 21:30:58.476 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - FEBS 启动完毕，时间：2022-03-28T21:30:58.476
+2022-03-28 21:30:58.819 febs [RMI TCP Connection(5)-192.168.42.78] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-28 21:30:58.820 febs [RMI TCP Connection(6)-192.168.42.78] INFO  p6spy - 2022-03-28 21:30:58 | 耗时 0 ms | SQL 语句：
+/* ping */ SELECT 1;
+2022-03-28 21:30:58.820 febs [RMI TCP Connection(5)-192.168.42.78] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-03-28 21:30:58.834 febs [RMI TCP Connection(5)-192.168.42.78] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2022-03-28 21:30:59.171 febs [Quartz Scheduler [MyScheduler]] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 1 seconds
+2022-03-28 21:30:59.183 febs [Quartz Scheduler [MyScheduler]] INFO  o.s.s.quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2022-03-28 21:30:59.183 febs [Quartz Scheduler [MyScheduler]] INFO  o.s.s.quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "WIN-ETS2DEK9JHC1648089944691"'s failed in-progress jobs.
+2022-03-28 21:30:59.210 febs [Quartz Scheduler [MyScheduler]] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_WIN-ETS2DEK9JHC1648474255534 started.
+2022-03-28 21:31:50.840 febs [http-nio-9527-exec-6] INFO  c.m.febs.common.aspect.LimitAspect - IP:127.0.0.1 第 1 次访问key为 [limit_login127.0.0.1]，描述为 [登录接口] 的接口
+2022-03-28 21:31:50.955 febs [http-nio-9527-exec-6] INFO  p6spy - 2022-03-28 21:31:50 | 耗时 14 ms | SQL 语句：
+UPDATE t_user SET last_login_time='2022-03-28T21:31:50.916+0800' WHERE username = 'admin';
+2022-03-28 21:31:50.957 febs [http-nio-9527-exec-6] INFO  p6spy - 2022-03-28 21:31:50 | 耗时 0 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2022-03-28 21:31:50.985 febs [http-nio-9527-exec-6] INFO  p6spy - 2022-03-28 21:31:50 | 耗时 2 ms | SQL 语句：
+INSERT INTO t_login_log ( username, login_time, location, ip ) VALUES ( 'admin', '2022-03-28T21:31:50.973+0800', '', '127.0.0.1' );
+2022-03-28 21:31:51.077 febs [http-nio-9527-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2022-03-28 21:31:51.102 febs [http-nio-9527-exec-8] INFO  p6spy - 2022-03-28 21:31:51 | 耗时 1 ms | SQL 语句：
+select m.* from t_menu m where m.type <> 1 and m.MENU_ID in (select distinct rm.menu_id from t_role_menu rm left join t_role r on (rm.role_id = r.role_id) left join t_user_role ur on (ur.role_id = r.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'admin') order by m.order_num;
+2022-03-28 21:31:51.367 febs [http-nio-9527-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2022-03-28 21:31:51.367 febs [http-nio-9527-exec-1] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2022-03-28 21:31:51.428 febs [http-nio-9527-exec-3] INFO  p6spy - 2022-03-28 21:31:51 | 耗时 57 ms | SQL 语句：
+select count(1) from t_login_log;
+2022-03-28 21:31:51.429 febs [http-nio-9527-exec-3] INFO  p6spy - 2022-03-28 21:31:51 | 耗时 0 ms | SQL 语句：
+select count(1) from t_login_log where datediff(login_time,now())=0;
+2022-03-28 21:31:51.431 febs [http-nio-9527-exec-3] INFO  p6spy - 2022-03-28 21:31:51 | 耗时 0 ms | SQL 语句：
+select count(distinct(ip)) from t_login_log where datediff(login_time,now())=0;
+2022-03-28 21:31:51.434 febs [http-nio-9527-exec-3] INFO  p6spy - 2022-03-28 21:31:51 | 耗时 0 ms | SQL 语句：
+select date_format(l.login_time, '%m-%d') days, count(1) count from ( select * from t_login_log where date_sub(curdate(), interval 7 day) <= date(login_time) ) as l where 1 = 1 group by days;
+2022-03-28 21:31:51.437 febs [http-nio-9527-exec-3] INFO  p6spy - 2022-03-28 21:31:51 | 耗时 0 ms | SQL 语句：
+select date_format(l.login_time, '%m-%d') days, count(1) count from ( select * from t_login_log where date_sub(curdate(), interval 7 day) <= date(login_time) ) as l where 1 = 1 and l.username = 'admin' group by days;
+2022-03-28 21:34:09.215 febs [http-nio-9527-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2022-03-28 21:34:09.215 febs [http-nio-9527-exec-7] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2022-03-28 21:34:09.229 febs [http-nio-9527-exec-7] INFO  p6spy - 2022-03-28 21:34:09 | 耗时 1 ms | SQL 语句：
+SELECT ID,title,content,date,images,publisher FROM bulletin_info;
+2022-03-28 21:34:09.236 febs [http-nio-9527-exec-7] INFO  p6spy - 2022-03-28 21:34:09 | 耗时 2 ms | SQL 语句：
+SELECT DATE_FORMAT( spo.days, '%m-%d' ) AS days, IFNULL( SUM(er.amount), 0 ) AS amount FROM ( SELECT DATE_SUB( curdate(), INTERVAL + 0 DAY ) days UNION SELECT DATE_SUB( curdate(), INTERVAL + 1 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 2 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 3 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 4 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 5 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 6 DAY )) spo LEFT JOIN stock_info er ON ( DATE_FORMAT( er.create_date, '%Y-%m-%d' ) = DATE_FORMAT( spo.days, '%Y-%m-%d' )) AND er.is_in = 1 GROUP BY days ORDER BY days ASC;
+2022-03-28 21:34:09.240 febs [http-nio-9527-exec-7] INFO  p6spy - 2022-03-28 21:34:09 | 耗时 2 ms | SQL 语句：
+SELECT IFNULL(sum( si.amount * si.price ),0) AS price, ct.`name` FROM stock_info si LEFT JOIN consumable_type ct ON ( ct.id = si.type_id ) WHERE si.is_in = 1 GROUP BY ct.id;
+2022-03-28 21:34:09.242 febs [http-nio-9527-exec-7] INFO  p6spy - 2022-03-28 21:34:09 | 耗时 0 ms | SQL 语句：
+SELECT DATE_FORMAT( spo.days, '%m-%d' ) AS days, IFNULL( SUM(er.amount), 0 ) AS amount FROM ( SELECT DATE_SUB( curdate(), INTERVAL + 0 DAY ) days UNION SELECT DATE_SUB( curdate(), INTERVAL + 1 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 2 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 3 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 4 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 5 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 6 DAY )) spo LEFT JOIN stock_info er ON ( DATE_FORMAT( er.create_date, '%Y-%m-%d' ) = DATE_FORMAT( spo.days, '%Y-%m-%d' )) AND er.is_in = 2 GROUP BY days ORDER BY days ASC;
+2022-03-28 21:34:09.244 febs [http-nio-9527-exec-7] INFO  p6spy - 2022-03-28 21:34:09 | 耗时 0 ms | SQL 语句：
+SELECT IFNULL(sum( si.amount * si.price ),0) AS price, ct.`name` FROM stock_info si LEFT JOIN consumable_type ct ON ( ct.id = si.type_id ) WHERE si.is_in = 2 GROUP BY ct.id;
+2022-03-28 21:34:09.247 febs [http-nio-9527-exec-7] INFO  p6spy - 2022-03-28 21:34:09 | 耗时 0 ms | SQL 语句：
+SELECT * FROM ( SELECT count( 1 ) AS putCount FROM stock_info si WHERE si.is_in = 1 ) AS on1, ( SELECT count( 1 ) AS outCount FROM stock_info si WHERE si.is_in = 2 ) AS on2, ( SELECT IFNULL( SUM( si.amount * si.price ),0) AS price FROM stock_info si WHERE si.is_in = 1 ) AS on3;
+2022-03-28 21:34:09.267 febs [http-nio-9527-exec-8] INFO  p6spy - 2022-03-28 21:34:09 | 耗时 49 ms | SQL 语句：
+select count(1) from t_login_log;
+2022-03-28 21:34:09.268 febs [http-nio-9527-exec-8] INFO  p6spy - 2022-03-28 21:34:09 | 耗时 0 ms | SQL 语句：
+select count(1) from t_login_log where datediff(login_time,now())=0;
+2022-03-28 21:34:09.270 febs [http-nio-9527-exec-8] INFO  p6spy - 2022-03-28 21:34:09 | 耗时 0 ms | SQL 语句：
+select count(distinct(ip)) from t_login_log where datediff(login_time,now())=0;
+2022-03-28 21:34:09.272 febs [http-nio-9527-exec-8] INFO  p6spy - 2022-03-28 21:34:09 | 耗时 0 ms | SQL 语句：
+select date_format(l.login_time, '%m-%d') days, count(1) count from ( select * from t_login_log where date_sub(curdate(), interval 7 day) <= date(login_time) ) as l where 1 = 1 group by days;
+2022-03-28 21:34:09.274 febs [http-nio-9527-exec-8] INFO  p6spy - 2022-03-28 21:34:09 | 耗时 0 ms | SQL 语句：
+select date_format(l.login_time, '%m-%d') days, count(1) count from ( select * from t_login_log where date_sub(curdate(), interval 7 day) <= date(login_time) ) as l where 1 = 1 and l.username = 'admin' group by days;
+2022-03-28 21:34:15.844 febs [http-nio-9527-exec-3] INFO  c.m.febs.common.aspect.LimitAspect - IP:127.0.0.1 第 1 次访问key为 [limit_login127.0.0.1]，描述为 [登录接口] 的接口
+2022-03-28 21:34:15.874 febs [http-nio-9527-exec-3] INFO  p6spy - 2022-03-28 21:34:15 | 耗时 27 ms | SQL 语句：
+UPDATE t_user SET last_login_time='2022-03-28T21:34:15.846+0800' WHERE username = 'admin';
+2022-03-28 21:34:15.880 febs [http-nio-9527-exec-3] INFO  p6spy - 2022-03-28 21:34:15 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2022-03-28 21:34:15.896 febs [http-nio-9527-exec-3] INFO  p6spy - 2022-03-28 21:34:15 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_login_log ( username, login_time, location, ip ) VALUES ( 'admin', '2022-03-28T21:34:15.893+0800', '', '127.0.0.1' );
+2022-03-28 21:34:15.919 febs [http-nio-9527-exec-4] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2022-03-28 21:34:15.925 febs [http-nio-9527-exec-4] INFO  p6spy - 2022-03-28 21:34:15 | 耗时 3 ms | SQL 语句：
+select m.* from t_menu m where m.type <> 1 and m.MENU_ID in (select distinct rm.menu_id from t_role_menu rm left join t_role r on (rm.role_id = r.role_id) left join t_user_role ur on (ur.role_id = r.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'admin') order by m.order_num;
+2022-03-28 21:34:16.211 febs [http-nio-9527-exec-7] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2022-03-28 21:34:16.211 febs [http-nio-9527-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2022-03-28 21:34:16.214 febs [http-nio-9527-exec-7] INFO  p6spy - 2022-03-28 21:34:16 | 耗时 0 ms | SQL 语句：
+SELECT ID,title,content,date,images,publisher FROM bulletin_info;
+2022-03-28 21:34:16.217 febs [http-nio-9527-exec-7] INFO  p6spy - 2022-03-28 21:34:16 | 耗时 1 ms | SQL 语句：
+SELECT DATE_FORMAT( spo.days, '%m-%d' ) AS days, IFNULL( SUM(er.amount), 0 ) AS amount FROM ( SELECT DATE_SUB( curdate(), INTERVAL + 0 DAY ) days UNION SELECT DATE_SUB( curdate(), INTERVAL + 1 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 2 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 3 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 4 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 5 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 6 DAY )) spo LEFT JOIN stock_info er ON ( DATE_FORMAT( er.create_date, '%Y-%m-%d' ) = DATE_FORMAT( spo.days, '%Y-%m-%d' )) AND er.is_in = 1 GROUP BY days ORDER BY days ASC;
+2022-03-28 21:34:16.219 febs [http-nio-9527-exec-7] INFO  p6spy - 2022-03-28 21:34:16 | 耗时 0 ms | SQL 语句：
+SELECT IFNULL(sum( si.amount * si.price ),0) AS price, ct.`name` FROM stock_info si LEFT JOIN consumable_type ct ON ( ct.id = si.type_id ) WHERE si.is_in = 1 GROUP BY ct.id;
+2022-03-28 21:34:16.221 febs [http-nio-9527-exec-7] INFO  p6spy - 2022-03-28 21:34:16 | 耗时 1 ms | SQL 语句：
+SELECT DATE_FORMAT( spo.days, '%m-%d' ) AS days, IFNULL( SUM(er.amount), 0 ) AS amount FROM ( SELECT DATE_SUB( curdate(), INTERVAL + 0 DAY ) days UNION SELECT DATE_SUB( curdate(), INTERVAL + 1 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 2 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 3 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 4 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 5 DAY ) UNION SELECT DATE_SUB( curdate(), INTERVAL + 6 DAY )) spo LEFT JOIN stock_info er ON ( DATE_FORMAT( er.create_date, '%Y-%m-%d' ) = DATE_FORMAT( spo.days, '%Y-%m-%d' )) AND er.is_in = 2 GROUP BY days ORDER BY days ASC;
+2022-03-28 21:34:16.224 febs [http-nio-9527-exec-7] INFO  p6spy - 2022-03-28 21:34:16 | 耗时 1 ms | SQL 语句：
+SELECT IFNULL(sum( si.amount * si.price ),0) AS price, ct.`name` FROM stock_info si LEFT JOIN consumable_type ct ON ( ct.id = si.type_id ) WHERE si.is_in = 2 GROUP BY ct.id;
+2022-03-28 21:34:16.225 febs [http-nio-9527-exec-7] INFO  p6spy - 2022-03-28 21:34:16 | 耗时 0 ms | SQL 语句：
+SELECT * FROM ( SELECT count( 1 ) AS putCount FROM stock_info si WHERE si.is_in = 1 ) AS on1, ( SELECT count( 1 ) AS outCount FROM stock_info si WHERE si.is_in = 2 ) AS on2, ( SELECT IFNULL( SUM( si.amount * si.price ),0) AS price FROM stock_info si WHERE si.is_in = 1 ) AS on3;
+2022-03-28 21:34:16.416 febs [http-nio-9527-exec-8] INFO  p6spy - 2022-03-28 21:34:16 | 耗时 202 ms | SQL 语句：
+select count(1) from t_login_log;
+2022-03-28 21:34:16.417 febs [http-nio-9527-exec-8] INFO  p6spy - 2022-03-28 21:34:16 | 耗时 0 ms | SQL 语句：
+select count(1) from t_login_log where datediff(login_time,now())=0;
+2022-03-28 21:34:16.419 febs [http-nio-9527-exec-8] INFO  p6spy - 2022-03-28 21:34:16 | 耗时 0 ms | SQL 语句：
+select count(distinct(ip)) from t_login_log where datediff(login_time,now())=0;
+2022-03-28 21:34:16.421 febs [http-nio-9527-exec-8] INFO  p6spy - 2022-03-28 21:34:16 | 耗时 0 ms | SQL 语句：
+select date_format(l.login_time, '%m-%d') days, count(1) count from ( select * from t_login_log where date_sub(curdate(), interval 7 day) <= date(login_time) ) as l where 1 = 1 group by days;
+2022-03-28 21:34:16.424 febs [http-nio-9527-exec-8] INFO  p6spy - 2022-03-28 21:34:16 | 耗时 1 ms | SQL 语句：
+select date_format(l.login_time, '%m-%d') days, count(1) count from ( select * from t_login_log where date_sub(curdate(), interval 7 day) <= date(login_time) ) as l where 1 = 1 and l.username = 'admin' group by days;
+2022-03-28 21:46:56.203 febs [Thread-20] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_WIN-ETS2DEK9JHC1648474255534 paused.
+2022-03-28 21:46:56.203 febs [Thread-20] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2022-03-28 21:46:56.213 febs [Thread-20] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+2022-03-28 21:46:56.213 febs [Thread-20] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2022-03-28 21:46:56.213 febs [Thread-20] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_WIN-ETS2DEK9JHC1648474255534 shutting down.
+2022-03-28 21:46:56.214 febs [Thread-20] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_WIN-ETS2DEK9JHC1648474255534 paused.
+2022-03-28 21:46:56.215 febs [Thread-20] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_WIN-ETS2DEK9JHC1648474255534 shutdown complete.
+2022-03-28 21:46:56.217 febs [Thread-20] INFO  c.b.d.d.DynamicRoutingDataSource - closing dynamicDatasource  ing....
+2022-03-28 21:46:56.217 febs [Thread-20] INFO  com.zaxxer.hikari.HikariDataSource - primary - Shutdown initiated...
+2022-03-28 21:46:56.220 febs [Thread-20] INFO  com.zaxxer.hikari.HikariDataSource - primary - Shutdown completed.

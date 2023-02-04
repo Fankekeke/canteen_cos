@@ -25,7 +25,7 @@
 
     <select id="getGoodsDetailByNum" resultType="java.util.LinkedHashMap">
         SELECT
-        gb.id,
+        si.id,
         gb.`name`,
         gb.type,
         gb.type_id AS typeId,

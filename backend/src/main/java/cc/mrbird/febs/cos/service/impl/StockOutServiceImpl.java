@@ -51,7 +51,7 @@ public class StockOutServiceImpl extends ServiceImpl<StockOutMapper, StockOut> i
         goodsBelongList.forEach(item -> {
             StockInfo stockInfo = stockInfoService.getOne(Wrappers.<StockInfo>lambdaQuery().eq(StockInfo::getName, item.getName()).eq(StockInfo::getIsIn, 0));
             // 更改库房数据
-            stockInfoService.update(Wrappers.<StockInfo>lambdaUpdate().set(StockInfo::getAmount, stockInfo.getAmount() - item.getAmount()).eq(StockInfo::getId, item.getId()));
+            stockInfoService.update(Wrappers.<StockInfo>lambdaUpdate().set(StockInfo::getAmount, stockInfo.getAmount() - item.getAmount()).eq(StockInfo::getId, stockInfo.getId()));
             item.setNum(stockOut.getNum());
 
             // 添加出库记录

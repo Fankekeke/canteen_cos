@@ -1,4 +1,4 @@
-### 基于SpringBoot的食堂采购系统
+### 基于SpringBoot + Vue的食堂采购系统
 
 #### 安装环境
 
